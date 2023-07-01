@@ -20,7 +20,7 @@ const Main = () => {
               sequence={[
                 'BSCS student',
                 2000,
-                'Software Developer',
+                'Front-end Developer',
                 2000
               ]}
               wrapper='span'
