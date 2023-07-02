@@ -5,25 +5,25 @@ const Interest = () => {
   const interests = [
     {
       id: 1,
-      title: 'Interest 1',
-      image: 'https://example.com/interest1.jpg',
+      title: 'Coding',
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
     },
     {
       id: 2,
-      title: 'Interest 2',
+      title: 'Sketching',
       image: 'https://example.com/interest2.jpg',
     },
     {
       id: 3,
-      title: 'Interest 3',
+      title: 'Learning',
       image: 'https://example.com/interest3.jpg',
     },
   ];
 
   return (
-    <div id="interest" className="mt-8 mx-4 md:mx-8 lg:mx-16 xl:mx-24">
+    <div id="interest" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
       <div className="max-w-6xl mx-auto bg-gray-100 rounded-lg shadow-md p-4">
-        <h2 className="text-2xl font-bold mb-4 text-center">Interests</h2>
+        <h1 className="text-2xl font-bold text-center">Interests</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-center">
           {interests.map((interest) => (
             <div key={interest.id} className="bg-white rounded-lg shadow-md p-4">
