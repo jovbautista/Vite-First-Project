@@ -25,8 +25,8 @@ const Interest = () => {
       id="interest"
       className="max-w-screen-lg mx-auto py-16 px-4 md:px-6 lg:px-8"
     >
-      <div className="bg-gray-100 rounded-lg shadow-md p-4">
-        <h1 className="text-2xl font-bold text-center mb-6">Interests</h1>
+        <div className="bg-gray-100 rounded-lg shadow-md p-4">
+        <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>Interests</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols- gap-3 justify-center items-center">
           {interests.map((interest) => (
             <div
