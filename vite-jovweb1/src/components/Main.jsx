@@ -30,8 +30,12 @@ const Main = () => {
             />
           </h2>
           <div className='flex justify-between pt-6 max-w-[60px] w-full'>
-            <BsFacebook className='cursor-pointer' size={20} />
-            <BsInstagram className='cursor-pointer' size={20} />
+          <a href="https://www.facebook.com/jovbautistaa/" target="_blank" rel="noopener noreferrer">
+              <BsFacebook className='cursor-pointer' size={20} />
+            </a>
+            <a href="https://www.instagram.com/osakisai/" target="_blank" rel="noopener noreferrer">
+              <BsInstagram className='cursor-pointer' size={20} />
+            </a>
           </div>
         </div>
         <Interest />
