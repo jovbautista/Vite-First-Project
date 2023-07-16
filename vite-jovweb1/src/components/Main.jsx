@@ -1,20 +1,20 @@
-import React from 'react'
-import { TypeAnimation } from 'react-type-animation'
-import { BsFacebook, BsInstagram } from 'react-icons/bs'
+import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
+import { BsFacebook, BsInstagram } from 'react-icons/bs';
 import Interest from './Interest';
 
 const Main = () => {
   return (
     <div id='main'>
       <img
-        className='w-full h-screen object-cover object-left'
-        src="https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+        className='w-full h-screen object-cover'
+        src="https://wallpapers.com/images/hd/4k-tech-1eweq7h47kehxd7y.jpg"
         alt="/"
       />
-      <div className='w-full h-screen absolute top-0 left-0 bg-white/20'>
+      <div className='w-full h-screen absolute top-0 left-0 bg-white/10'>
         <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>
-          <h1 className='sm:text-5xl text-4xl font-bold text-gray-800'>I'm Jov Bautista</h1>
-          <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800'>
+          <h1 className='sm:text-5xl text-4xl font-bold text-white'>I'm Jov Bautista</h1>
+          <h2 className='flex sm:text-3xl text-2xl pt-4 text-white'>
             I'm a
             <TypeAnimation
               sequence={[
@@ -26,22 +26,22 @@ const Main = () => {
               wrapper='span'
               cursor={true}
               repeat={Infinity}
-              style={{ fontSize: '1em', paddingLeft: '5px' }}
+              style={{ fontSize: '1em', paddingLeft: '5px', color: 'white' }}
             />
           </h2>
           <div className='flex justify-between pt-6 max-w-[60px] w-full'>
-          <a href="https://www.facebook.com/jovbautistaa/" target="_blank" rel="noopener noreferrer">
-              <BsFacebook className='cursor-pointer' size={20} />
+            <a href="https://www.facebook.com/jovbautistaa/" target="_blank" rel="noopener noreferrer">
+              <BsFacebook className='cursor-pointer text-white' size={20} />
             </a>
             <a href="https://www.instagram.com/osakisai/" target="_blank" rel="noopener noreferrer">
-              <BsInstagram className='cursor-pointer' size={20} />
+              <BsInstagram className='cursor-pointer text-white' size={20} />
             </a>
           </div>
         </div>
         <Interest />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

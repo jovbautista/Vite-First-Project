@@ -11,7 +11,10 @@ const SideNav = () => {
 
   return (
     <div>
-      <AiOutlineMenu onClick={handleNav} className='absolute top-4 right-4 z-[99] nd:hidden' />
+       <AiOutlineMenu
+        onClick={handleNav}
+        className='absolute top-4 right-4 z-[99] nd:hidden text-white'
+      />
       {nav ? (
         <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>
           <a

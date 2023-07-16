@@ -23,26 +23,27 @@ const Interest = () => {
   return (
     <div
       id="interest"
-      className="max-w-screen-lg mx-auto py-16 px-4 md:px-6 lg:px-8"
+      className="max-x-[1040px] m-auto md:pl-20 p-4 py-16"
     >
-        <div className="bg-gray-100 rounded-lg shadow-md p-4">
-        <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>Interests</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols- gap-3 justify-center items-center">
-          {interests.map((interest) => (
-            <div
-              key={interest.id}
-              className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
-              style={{ marginBottom: '-1rem' }}
-            >
-              <img
-                src={interest.image}
-                alt={interest.title}
-                className="w-full h-48 object-cover mb-2 rounded-lg"
-              />
-              <h3 className="text-lg font-semibold">{interest.title}</h3>
-            </div>
-          ))}
-        </div>
+      <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Interests</h1>
+      <p className='text-center py-8'>
+      Welcome to the captivating realm of my interests! Coding becomes my playground, where I transform lines of code into digital wonders, while sketching unleashes my imagination onto paper, bringing vibrant stories to life. Fueling my insatiable curiosity, continuous learning allows me to explore new frontiers, conquer challenges, and expand my knowledge horizons with endless enthusiasm.
+      </p>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12 justify-center items-center">
+        {interests.map((interest) => (
+          <div
+            key={interest.id}
+            className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+            style={{ marginBottom: '2rem' }}
+          >
+            <img
+              src={interest.image}
+              alt={interest.title}
+              className="w-full h-64 object-cover mb-2 rounded-lg"
+            />
+            <h3 className="text-lg font-semibold">{interest.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );

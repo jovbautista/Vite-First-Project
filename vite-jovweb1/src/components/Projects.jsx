@@ -8,7 +8,7 @@ const Projects = () => {
     <div id='projects' className='max-x-[1040px] m-auto md:pl-20 p-4 py-16'>
         <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
         <p className='text-center py-8'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde perspiciatis possimus vero. Non a enim blanditiis dolorem libero et voluptas reiciendis qui ipsa reprehenderit? Voluptas recusandae ea odio fugiat?
+        Discover my expanding portfolio in the Projects section, showcasing ongoing works that reflect my commitment to growth and continuous improvement. Witness the evolution of my skills and creativity as I craft remarkable web and mobile experiences. Stay tuned for more exciting projects coming soon!
         </p>
         <div className='grid sm:grid-cols-2 gap-12'>
             <ProjectsItem img={salonImg} title='Salon Management System'/>
